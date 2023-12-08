@@ -8,12 +8,16 @@ const encoder = createEncoder({ contentTopic });
 const decoder = createDecoder(contentTopic);
 
 interface incomingMsg {
-    name: string;
+    Title: string,
+    Image: string,
+    Content: string
 }
 
 const incomingMsgBuf = new protobuf.Type("incomingMsg")
 .add(new protobuf.Field("id", 1,"string"))
-.add(new protobuf.Field("name", 2, "string"))
+.add(new protobuf.Field("Title", 2, "string"))
+.add(new protobuf.Field("Image", 3, "string"))
+.add(new protobuf.Field("Content", 4, "string"))
 
 /* 
     Start node

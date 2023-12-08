@@ -3,6 +3,7 @@ import { useAccount, useConnect, useEnsName } from 'wagmi'
 import  WakuNodeCAPI  from '@/context/WakuNodeRunContextApi';
 import { useContext, useEffect } from 'react';
 import { useState } from 'react';
+import { createNode, sendData, subscribeIncomingData, receiveData } from '../components/WakuSetup'
 
 interface Data {
     Title: string;
@@ -12,6 +13,7 @@ interface Data {
 
 function publish () {
     const { address, isConnected } = useAccount();
+    const  myWakuNode  = useContext(WakuNodeCAPI);
 
     const [formData, setFormData] = useState<Data>({
         Title: '',
@@ -30,7 +32,16 @@ function publish () {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         //onSubmit(formData);
-        console.log(formData);
+        console.log(formData); 
+
+        if(myWakuNode?.myWakuNode){
+            console.log("myWakuNode: ", myWakuNode);
+            sendData(myWakuNode?.myWakuNode, formData);
+            subscribeIncomingData(myWakuNode?.myWakuNode);
+        }
+        else {
+            console.log("Waku node error");
+        }
     };
 
     return(
