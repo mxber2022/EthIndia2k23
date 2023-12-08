@@ -69,3 +69,18 @@ export const sendData = async (node: LightNode, ourData: incomingMsg) => {
 export const receiveData = (dataReceived: incomingMsg) => {
     console.log("dataReceived: ", dataReceived);
 }   
+
+/* 
+    Store protocol
+*/
+
+export const getStoreData = async (node: LightNode) => {
+    const callback = (wakuMessage: any) => {
+        console.log("Store Messages: ",wakuMessage);
+    };
+
+    await node.store.queryWithOrderedCallback(
+        [decoder],
+        callback,
+    );
+}
