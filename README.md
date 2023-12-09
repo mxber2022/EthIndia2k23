@@ -12,11 +12,17 @@ Contract Content - 0xFccB23456a6D4e6279F567A4Ef445b6169223ff5 </br>
 Contract GovernanceToken - 0x36a20007846639De19d63C3da976f8b5Ea1BfeDc </br>
 contract GovernanceContract - 0x629Fb566FD8f318d6c5E2559f55C80Dbb73F92E3 </br>
 
+### Arbitrum Stylus
+
+Contract Content - 0xb5dD8f6770593bC05Dc5B336F809695Ee481c991 </br>
+Contract GovernanceToken - 0x2E61762970Ed685ae91c8aCa27D7E926C67f1662 </br>
+contract GovernanceContract -  0x0ee7F43c91Ca54DEEFb58B261A454B9E8b4FEe8B </br>
+
 ### Scroll
 
 Contract Content - 0x629Fb566FD8f318d6c5E2559f55C80Dbb73F92E3 </br>
 Contract GovernanceToken - 0x82a288B3D29a18e24a8f7776f222D91B757266cb </br>
-contract GovernanceContract - 0x41e08D267B224fa464264930544fF7ea7e3FA305 </br>
+Contract GovernanceContract - 0x41e08D267B224fa464264930544fF7ea7e3FA305 </br>
 
 0.7 gas fees
 
