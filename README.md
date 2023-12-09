@@ -4,6 +4,22 @@
 
 PeerPower DAO is a decentralized application (dApp) governed by a decentralized autonomous organization (DAO). It empowers a community of participants to collaboratively manage and make decisions about the application and its content in a peer-to-peer network.
 
+## SmartContract deployment address 
+
+### Arbitrum
+
+### Filecoin
+
+### Scroll
+
+### Mantle
+
+### Celo
+
+### Base
+
+### 
+
 ## Features
 
 - **Decentralized Governance:** Decision-making is in the hands of the community through a DAO, ensuring a fair and inclusive process.
@@ -14,7 +30,7 @@ PeerPower DAO is a decentralized application (dApp) governed by a decentralized 
 
 ## Getting Started
 
-### SmartContract deployment address 
+
 deploying "DataGovernanceToken" (tx: 0xfbce6ef09e76d69a8d87287bd85d5c4e5da41da83f8fcc0994b308513661cbf9)...: deployed at 0xAaa906c8C2720c50B69a5Ba54B44253Ea1001C98 with 101677142 gas
 Checkpoints 1
 Delegated to deployer wallet!
