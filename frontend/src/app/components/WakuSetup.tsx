@@ -2,7 +2,7 @@
 import { useWaku } from "@waku/react";
 import { DecodedMessage, LightNode, createDecoder, createEncoder, createLightNode, waitForRemotePeer } from "@waku/sdk";
 import protobuf from "protobufjs";
-const contentTopic = "/hellowakuETHINDIA/0";
+const contentTopic = "/hellowakuETHINDIAwqeq/0";
 const encoder = createEncoder({ contentTopic });
 const decoder = createDecoder(contentTopic);
 
@@ -53,14 +53,17 @@ export const subscribeIncomingData = async (node: LightNode) => {
         */ 
        
         /* 1. Upload to IPFS */
-        const response = fetch('/api/nftstorageupload', {
+        const response = await fetch('/api/nftstorageupload', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify(incomingMsgObj),
+            body: JSON.stringify("this is test data"),
         })
         console.log("response is: ", response);
+
+        /* 2. Create proposal */
+
     }
     const subscription = await node?.filter?.createSubscription();
     await subscription.subscribe([decoder], _callback);

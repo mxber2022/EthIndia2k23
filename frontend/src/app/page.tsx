@@ -21,7 +21,7 @@ export default function Home() {
     console.log("myWakuNode: ", myWakuNode);
   //  sendData(myWakuNode?.myWakuNode, myData);
     //subscribeIncomingData(myWakuNode?.myWakuNode);
-    getStoreData(myWakuNode?.myWakuNode);
+   // getStoreData(myWakuNode?.myWakuNode);
   }
   
   console.log("hellp");
