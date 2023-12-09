@@ -1883,8 +1883,8 @@
       ]
     },
     "/Users/maharajababu/Documents/Projects/EthIndia2k23/SmartContract/contracts/GovernanceContract.sol": {
-      "lastModificationDate": 1702114894314,
-      "contentHash": "42b80c576edd12ec82a23150cefb6f1a",
+      "lastModificationDate": 1702148649912,
+      "contentHash": "5320ccb200286beb4a728e74a6bffd44",
       "sourceName": "contracts/GovernanceContract.sol",
       "solcConfig": {
         "version": "0.8.20",

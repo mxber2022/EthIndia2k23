@@ -6,7 +6,13 @@ const PRIVATE_KEY = "d2ab6e77539c6d2ba90f19b217e26e4fad301e5066445514b4b63cba0fc
 
 module.exports = {
   solidity: "0.8.20",
-
+  settings: {
+    evmVersion: "shanghai",
+    optimizer: {
+      enabled: true,
+      runs: 200
+    }
+  },
   networks: {
     
     'base-testnet': {
@@ -34,15 +40,22 @@ module.exports = {
       accounts: [PRIVATE_KEY],
     },
 
+    "arbitrumGoerli": {
+      url: 'https://goerli-rollup.arbitrum.io/rpc',
+      chainId: 421613,
+      accounts: [PRIVATE_KEY],
+    },
+
   },
 
   etherscan: {
     apiKey: {
       "base-testnet": "abc",
       "mantle-testnet": "YourKEY",
-      "scroll-testnet": "abcd",
+      "scroll-testnet": "7U4ZHQMC6MPFCDA3QXGK3U1NUK5F5UD98Y",
       "arbitrum-stylus": "abcd",
       "celo-alfajores": "abcd",
+      "arbitrumGoerli": "E7J3ZRQ4E89TQD9R52STY453UEE7G76GIU"
     },
 
     customChains: [
@@ -68,14 +81,14 @@ module.exports = {
         network: "scroll-testnet",
         chainId: 534351,
         urls: {
-          apiURL: "https://sepolia-blockscout.scroll.io/api",
-          browserURL: '',
+          apiURL: "https://api-sepolia.scrollscan.com/api",
+          browserURL: 'https://sepolia.scrollscan.com',
         },
       },
 
       {
         network: "arbitrum-stylus",
-        chainId: 534351,
+        chainId: 23011913,
         urls: {
           apiURL: "https://stylus-testnet-explorer.arbitrum.io/api",
           browserURL: '',
@@ -88,6 +101,15 @@ module.exports = {
         urls: {
             apiURL: "https://api-alfajores.celoscan.io/api",
             browserURL: "https://alfajores.celoscan.io",
+        },
+      },
+
+      {
+        network: "arbitrumGoerli",
+        chainId: 421613,
+        urls: {
+            apiURL: "https://api-goerli.arbiscan.io/api",
+            browserURL: "https://api-goerli.arbiscan.io/api",
         },
       },
 
