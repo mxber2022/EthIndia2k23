@@ -12,14 +12,14 @@ async function getExampleImage() {
     return r.blob()
 }
 
-export async function GET (request: NextRequest) {
+export async function POST (request: NextRequest) {
     const image = await getExampleImage();
 
     const nft = {
         image,
         name: "Storing the World's Most Valuable Virtual Assets with NFT.Storage",
         description: "The metaverse is here. Where is it all being stored?",
-    }
+    } 
     const client = new NFTStorage({ token: API_KEY });
     const metadata = await client.store(nft)
     console.log('NFT data stored!')

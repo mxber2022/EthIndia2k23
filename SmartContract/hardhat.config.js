@@ -1,11 +1,11 @@
 require("@nomicfoundation/hardhat-toolbox");
-require("dotenv").config({ path: ".env" });
+require("dotenv").config({ path: "/Users/maharajababu/Documents/Projects/EthIndia2k23/SmartContract/.env" });
 /** @type import('hardhat/config').HardhatUserConfig */
 
-const PRIVATE_KEY = process.env.PRIVATE_KEY; 
+const PRIVATE_KEY = "d2ab6e77539c6d2ba90f19b217e26e4fad301e5066445514b4b63cba0fc80b6c"; 
 
 module.exports = {
-  solidity: "0.8.22",
+  solidity: "0.8.20",
 
   networks: {
     

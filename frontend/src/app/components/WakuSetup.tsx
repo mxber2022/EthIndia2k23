@@ -50,7 +50,17 @@ export const subscribeIncomingData = async (node: LightNode) => {
                 3. List all Proposals
                 4. allow to vote on proposal
                 5. list all propsal passed as news
-        */        
+        */ 
+       
+        /* 1. Upload to IPFS */
+        const response = fetch('/api/nftstorageupload', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(incomingMsgObj),
+        })
+        console.log("response is: ", response);
     }
     const subscription = await node?.filter?.createSubscription();
     await subscription.subscribe([decoder], _callback);
