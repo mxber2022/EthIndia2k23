@@ -2,7 +2,7 @@
 
 # PeerPower DAO
 
-PeerPower DAO is a decentralized application (dApp) governed by a decentralized autonomous organization (DAO). It empowers a community of participants to collaboratively manage and make decisions about the application and its content in a peer-to-peer network.
+PeerPower DAO is a decentralized p2p application powered by WAKU and governed by a decentralized autonomous organization (DAO). It empowers a community of participants to collaboratively manage and make decisions about the application and its content in a peer-to-peer network.
 
 ## SmartContract deployment address 
 
@@ -46,9 +46,9 @@ contract GovernanceContract - 0xD33739924BE8FB96bea20c6F782EC502b3A69A66 </br>
 
 ### Filecoin
 
-Contract Content -  </br>
-Contract GovernanceToken -  </br>
-contract GovernanceContract -  </br>
+Contract Content - 0xe13502AC4E3503eC9bCC0623015C6A669f6AD8FD </br>
+Contract GovernanceToken - 0x629Fb566FD8f318d6c5E2559f55C80Dbb73F92E3 </br>
+contract GovernanceContract - 0x82a288B3D29a18e24a8f7776f222D91B757266cb </br>
 
 Data Dao </br>
 deploying "DataGovernanceToken" (tx: 0xfbce6ef09e76d69a8d87287bd85d5c4e5da41da83f8fcc0994b308513661cbf9)...: deployed at 0xAaa906c8C2720c50B69a5Ba54B44253Ea1001C98 with 101677142 gas
