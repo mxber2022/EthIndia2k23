@@ -14,11 +14,11 @@ function Nav() {
               {/* Left Nav */}
               <div className="flex space-x-4 items-center py-5">
                 <div>
-                    <h1 className="text-3xl font-mono font-bold"><Link href="/">NewsGuard-P2P</Link></h1>
+                    <h1 className="text-3xl font-mono font-bold"><Link href="/">PeerPowerDAO</Link></h1>
                 </div>
 
                 <div className="bg-gray-300 w-[8rem] flex justify-center rounded-sm text-black mr-10 hover:bg-slate-400">
-                  <Link href="/publish">Publish News</Link>
+                  <Link href="/publish">Publish Content</Link>
                 </div>
               </div>
               

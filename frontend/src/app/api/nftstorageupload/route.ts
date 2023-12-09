@@ -14,21 +14,16 @@ async function getExampleImage(imageuri: string) {
 
 export async function POST (request: NextRequest) {
 
-    try{
-        const body = await request.json();
-        console.log("data: ", body);
-    }
-    catch(e) {
-        console.log("error: ", e);
-    }
-
-    
-    const image = await getExampleImage("https://metadata.degods.com/g/8732-s3-male.png");
+    const body = await request.json();
+    const title = body.Title;
+    const images = body.Image;
+    const content = body.Content;
+    const image = await getExampleImage(images);
 
     const nft = {
-        image,
-        name: "Storing the World's Most Valuable Virtual Assets with NFT.Storage",
-        description: "The metaverse is here. Where is it all being stored?",
+        image: image,
+        name: title,
+        description: content,
     } 
     const client = new NFTStorage({ token: API_KEY });
     const metadata = await client.store(nft)

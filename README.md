@@ -1,5 +1,19 @@
 # EthIndia2k23
 
+# PeerPower DAO
+
+PeerPower DAO is a decentralized application (dApp) governed by a decentralized autonomous organization (DAO). It empowers a community of participants to collaboratively manage and make decisions about the application and its content in a peer-to-peer network.
+
+## Features
+
+- **Decentralized Governance:** Decision-making is in the hands of the community through a DAO, ensuring a fair and inclusive process.
+- **Peer-to-Peer Interaction:** The dApp operates on a peer-to-peer network, promoting decentralization and resilience.
+- **Smart Contract Integration:** DAO governance is implemented using smart contracts on [Blockchain Platform], ensuring transparency and security.
+- **Content Proposals:** Community members can propose changes or additions to the content, fostering a dynamic and responsive environment.
+- **Voting Mechanism:** DAO members can vote on proposals, with voting power determined by token ownership.
+
+## Getting Started
+
 ### SmartContract deployment address 
 deploying "DataGovernanceToken" (tx: 0xfbce6ef09e76d69a8d87287bd85d5c4e5da41da83f8fcc0994b308513661cbf9)...: deployed at 0xAaa906c8C2720c50B69a5Ba54B44253Ea1001C98 with 101677142 gas
 Checkpoints 1

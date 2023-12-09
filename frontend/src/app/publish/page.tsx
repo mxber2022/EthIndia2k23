@@ -48,7 +48,7 @@ function publish () {
         <>
             <div className='bg-mine mx-96 rounded-md font-chiliz my-8 text-center min-w-fit'>
                 <div className='p-7'>
-                    <h1 className='text-chilizColor text-3xl font-bold'>Publish your news here !</h1>
+                    <h1 className='text-chilizColor text-3xl font-bold'>Publish your content here !</h1>
                 </div>
                 
                 <form onSubmit={handleSubmit}>

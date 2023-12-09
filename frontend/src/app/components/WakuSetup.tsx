@@ -59,12 +59,12 @@ export const subscribeIncomingData = async (node: LightNode) => {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify("this is test data"),
+            body: JSON.stringify(incomingMsgObj),
         })
         console.log("response is: ", response);
 
         /* 2. Create proposal */
-        await propose(["0x94F2840338d04cE69e3bcb1cf19B2e802dA1202F","testinguri"], "safeMint", "Proposal testing");
+       // await propose(["0x7199D548f1B30EA083Fe668202fd5E621241CC89","testinguri"], "safeMint", "Proposald testing");
 
     }
     const subscription = await node?.filter?.createSubscription();
