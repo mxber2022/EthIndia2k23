@@ -4,6 +4,7 @@ import  WakuNodeCAPI  from '@/context/WakuNodeRunContextApi';
 import { useContext, useEffect } from 'react';
 import { useState } from 'react';
 import { createNode, sendData, subscribeIncomingData, receiveData } from '../components/WakuSetup'
+import { useNetwork } from 'wagmi';
 
 interface Data {
     Title: string;
@@ -12,7 +13,10 @@ interface Data {
 }
 
 function publish () {
-    const { address, isConnected } = useAccount();
+    const { address, isConnected , connector } = useAccount();
+    const { chain, chains } = useNetwork()
+    console.log(chain?.name);
+
     const  myWakuNode  = useContext(WakuNodeCAPI);
 
     const [formData, setFormData] = useState<Data>({
@@ -20,7 +24,7 @@ function publish () {
         Image: '',
         Content: '',
     });
-
+    console.log(connector?.name);
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> ) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({

@@ -8,17 +8,40 @@ PeerPower DAO is a decentralized application (dApp) governed by a decentralized 
 
 ### Arbitrum
 
+Contract Content -  </br>
+Contract GovernanceToken -  </br>
+contract GovernanceContract -  </br>
+
 ### Filecoin
+
+Contract Content -  </br>
+Contract GovernanceToken -  </br>
+contract GovernanceContract -  </br>
 
 ### Scroll
 
+Contract Content -  </br>
+Contract GovernanceToken -  </br>
+contract GovernanceContract -  </br>
+
 ### Mantle
+
+Contract Content -  </br>
+Contract GovernanceToken -  </br>
+contract GovernanceContract -  </br>
 
 ### Celo
 
+Contract Content -  </br>
+Contract GovernanceToken -  </br>
+contract GovernanceContract -  </br>
+
 ### Base
 
-### 
+Contract Content -  </br>
+Contract GovernanceToken -  </br>
+contract GovernanceContract -  </br>
+
 
 ## Features
 
