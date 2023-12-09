@@ -9,3 +9,4 @@ deploying "LighthouseClient" (tx: 0x4b95235f3fb2b3b95b5017d9962e480dc050a5414085
 Transferring LighthouseClient Owner to Governor Contract
 Ownership transferred
 
+nvm use stable  
