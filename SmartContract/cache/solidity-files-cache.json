@@ -1028,8 +1028,8 @@
       ]
     },
     "/Users/maharajababu/Documents/Projects/EthIndia2k23/SmartContract/contracts/GovernanceContract.sol": {
-      "lastModificationDate": 1702111946860,
-      "contentHash": "db916741c551c44650b8f78df7d49e5d",
+      "lastModificationDate": 1702114894314,
+      "contentHash": "42b80c576edd12ec82a23150cefb6f1a",
       "sourceName": "contracts/GovernanceContract.sol",
       "solcConfig": {
         "version": "0.8.22",
@@ -1060,8 +1060,7 @@
         "@openzeppelin/contracts/governance/extensions/GovernorSettings.sol",
         "@openzeppelin/contracts/governance/extensions/GovernorCountingSimple.sol",
         "@openzeppelin/contracts/governance/extensions/GovernorVotes.sol",
-        "@openzeppelin/contracts/governance/extensions/GovernorVotesQuorumFraction.sol",
-        "@openzeppelin/contracts/governance/extensions/GovernorTimelockControl.sol"
+        "@openzeppelin/contracts/governance/extensions/GovernorVotesQuorumFraction.sol"
       ],
       "versionPragmas": [
         "^0.8.20"
