@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import styles from './page.module.css'
-import { createNode, sendData, subscribeIncomingData, receiveData } from './components/WakuSetup';
+import { createNode, sendData, subscribeIncomingData, receiveData, getStoreData } from './components/WakuSetup';
 import { useWaku } from "@waku/react";
 import { useContext, useEffect } from 'react';
 import { LightNode } from "@waku/sdk";
@@ -21,6 +21,7 @@ export default function Home() {
     console.log("myWakuNode: ", myWakuNode);
   //  sendData(myWakuNode?.myWakuNode, myData);
     //subscribeIncomingData(myWakuNode?.myWakuNode);
+    getStoreData(myWakuNode?.myWakuNode);
   }
   
   console.log("hellp");

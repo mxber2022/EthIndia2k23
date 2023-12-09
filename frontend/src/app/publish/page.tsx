@@ -29,7 +29,7 @@ function publish () {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         //onSubmit(formData);
         console.log(formData); 
@@ -37,7 +37,7 @@ function publish () {
         if(myWakuNode?.myWakuNode){
             console.log("myWakuNode: ", myWakuNode);
             sendData(myWakuNode?.myWakuNode, formData);
-            subscribeIncomingData(myWakuNode?.myWakuNode);
+            await subscribeIncomingData(myWakuNode?.myWakuNode);
         }
         else {
             console.log("Waku node error");

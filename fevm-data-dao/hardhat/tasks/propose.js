@@ -16,7 +16,7 @@ task(
 
 	await propose([cidHex], "storeCID", PROPOSAL_DESCRIPTION)
 
-    })
+    }) 
 	
 async function propose(args, functionToCall, proposalDescription) {
     const governor = await ethers.getContract("GovernorContract");

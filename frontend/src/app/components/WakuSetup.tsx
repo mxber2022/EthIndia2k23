@@ -2,8 +2,7 @@
 import { useWaku } from "@waku/react";
 import { DecodedMessage, LightNode, createDecoder, createEncoder, createLightNode, waitForRemotePeer } from "@waku/sdk";
 import protobuf from "protobufjs";
-
-const contentTopic = "/hellowakuberlin/0";
+const contentTopic = "/hellowakuETHINDIA/0";
 const encoder = createEncoder({ contentTopic });
 const decoder = createDecoder(contentTopic);
 
@@ -41,10 +40,17 @@ export const createNode = async () => {
 
 export const subscribeIncomingData = async (node: LightNode) => {
 
-    const _callback = (incomingMsg: DecodedMessage) => {
+    const _callback = async (incomingMsg: DecodedMessage) => {
         if(!incomingMsg.payload) return;
         const incomingMsgObj = incomingMsgBuf.decode(incomingMsg.payload);
         console.log("Decoded Message is: ", incomingMsgObj);
+        /*
+                1. upload to ipfs
+                2. create proposal
+                3. List all Proposals
+                4. allow to vote on proposal
+                5. list all propsal passed as news
+        */        
     }
     const subscription = await node?.filter?.createSubscription();
     await subscription.subscribe([decoder], _callback);

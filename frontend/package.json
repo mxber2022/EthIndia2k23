@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lighthouse-web3/sdk": "^0.3.0",
     "@waku/react": "^0.0.5-63a782d",
     "@waku/sdk": "^0.0.21",
     "@web3modal/wagmi": "^3.4.0",
