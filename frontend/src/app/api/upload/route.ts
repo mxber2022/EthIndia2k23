@@ -5,7 +5,7 @@ import lighthouse from '@lighthouse-web3/sdk';
 export async function GET (request: NextRequest) {
 
     const meta = {
-        name: 'hellohh',
+        name: 'EthIndia',
         description: 'A description of my NFThgh',
         image: 'IMAGE_URLhh',
     };

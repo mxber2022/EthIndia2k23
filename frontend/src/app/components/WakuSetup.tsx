@@ -2,6 +2,7 @@
 import { useWaku } from "@waku/react";
 import { DecodedMessage, LightNode, createDecoder, createEncoder, createLightNode, waitForRemotePeer } from "@waku/sdk";
 import protobuf from "protobufjs";
+import { propose } from "./propose";
 const contentTopic = "/hellowakuETHINDIAwqeq/0";
 const encoder = createEncoder({ contentTopic });
 const decoder = createDecoder(contentTopic);
@@ -63,6 +64,7 @@ export const subscribeIncomingData = async (node: LightNode) => {
         console.log("response is: ", response);
 
         /* 2. Create proposal */
+        await propose(["0x94F2840338d04cE69e3bcb1cf19B2e802dA1202F","testinguri"], "safeMint", "Proposal testing");
 
     }
     const subscription = await node?.filter?.createSubscription();
