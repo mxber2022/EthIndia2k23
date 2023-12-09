@@ -16,13 +16,16 @@ export const propose = async (args: any[], functionToCall: string, proposalDescr
         functionToCall, args
     );
     console.log("encodedFunctionCall: ", encodedFunctionCall);
+    console.log("ContentCon.address: ", ContentCon.address);
+    console.log("encodedFunctionCall: ", encodedFunctionCall);
+    console.log("proposalDescription: ", proposalDescription);
 
     try{
         const proposeTx = await GovCon.propose(
             [ContentCon.address],
             [0],
             [encodedFunctionCall],
-            [proposalDescription]
+            proposalDescription
         );
         
         console.log("proposeTx: ", proposeTx);
