@@ -34,9 +34,9 @@ contract GovernanceContract - 0x84239B1fDB29d493CAd65BecC55caCcfb8F144B4 </br>
 
 ### Celo
 
-Contract Content -  </br>
-Contract GovernanceToken -  </br>
-contract GovernanceContract -  </br>
+Contract Content - 0xFccB23456a6D4e6279F567A4Ef445b6169223ff5 </br>
+Contract GovernanceToken - 0x36a20007846639De19d63C3da976f8b5Ea1BfeDc </br>
+contract GovernanceContract - 0xe13502AC4E3503eC9bCC0623015C6A669f6AD8FD </br>
 
 ### Base
 
