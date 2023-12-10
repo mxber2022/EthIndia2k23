@@ -9,7 +9,7 @@ import WakuNodeProvider from '@/context/WakuNodeProvider';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'NewsGuard',
+  title: 'PeerPowerDao',
   description: 'ETH India',
 }
 
