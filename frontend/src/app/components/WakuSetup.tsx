@@ -61,10 +61,12 @@ export const subscribeIncomingData = async (node: LightNode) => {
             },
             body: JSON.stringify(incomingMsgObj),
         })
-        console.log("response is: ", response);
+       // console.log("response is: ", response);
+        const responseData = await response.json();
+        console.log("Response data: ", responseData.message);
 
         /* 2. Create proposal */
-        await propose(["0x7199D548f1B30EA083Fe668202fd5E621241CC89","https://metadata.degods.com/g/8557-dead.png"], "safeMint", "Proposal 3");
+        await propose(["0x7199D548f1B30EA083Fe668202fd5E621241CC89", responseData.message], "safeMint", `Proposal ${responseData.message}`);
 
     }
     const subscription = await node?.filter?.createSubscription();
