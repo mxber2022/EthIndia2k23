@@ -17,11 +17,15 @@ const WakuNodeProvider = ({ children }: { children: React.ReactNode }) => {
     }
 
     React.useEffect(() => {
+
+        create().then((temp) => {
+            setMyWakuNode(temp);
+        });
         
         return ()=> {
-            create().then((temp) => {
-                setMyWakuNode(temp);
-            });
+            // create().then((temp) => {
+            //     setMyWakuNode(temp);
+            // });
         }
 
     }, []);
